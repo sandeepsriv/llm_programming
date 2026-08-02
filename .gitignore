@@ -60,5 +60,4 @@ terraform.tfvars
 .vscode/
 .DS_Store
 
-# Local scratch notebook (may contain prompts, outputs, or credentials)
-call-frontier-llm.ipynb
+
