@@ -60,4 +60,4 @@ terraform.tfvars
 .vscode/
 .DS_Store
 
-
+vector_db/
