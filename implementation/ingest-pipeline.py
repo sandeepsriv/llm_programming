@@ -21,6 +21,7 @@ KNOWLEDGE_BASE = str(Path(__file__).parent.parent / "knowledge-base")
 load_dotenv(override=True)
 
 embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+# embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 
 def fetch_documents():
@@ -40,7 +41,7 @@ def fetch_documents():
 
 
 def create_chunks(documents):
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=200)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=50)
     chunks = text_splitter.split_documents(documents)
     return chunks
 
