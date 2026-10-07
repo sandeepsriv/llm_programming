@@ -5,13 +5,13 @@ from litellm import completion
 from dotenv import load_dotenv
 
 from evaluation.test import TestQuestion, load_tests
-from implementation.raganswer import answer_question, fetch_context
+from implementation.answer import answer_question, fetch_context
 
 
 load_dotenv(override=True)
 
 MODEL = "gpt-4.1-nano"
-db_name = "vector_db_122-rag-ingest"
+db_name = "vector_db"
 
 
 class RetrievalEval(BaseModel):
