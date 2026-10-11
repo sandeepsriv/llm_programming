@@ -62,3 +62,4 @@ terraform.tfvars
 
 vector_db/
 vector_db*/
+preprocessed_db/
